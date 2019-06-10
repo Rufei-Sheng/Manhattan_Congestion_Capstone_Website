@@ -1,0 +1,85 @@
+body{
+  background-color: #fff;
+}
+
+h1, h2 {
+  font-family: fantasy
+}
+
+h3 {
+  font-size: :5px;
+}
+
+#mapContainer {
+  height: 520px;
+  width: 100%;
+  background: lightgray;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100%;
+  overflow: scroll;
+  width: 300px;
+  position:absolute;
+  background-color: #fff;
+  border: 3px solid #FFE752;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 15px;
+  -webkit-box-shadow: 9px 9px 15px 8px rgba(0,0,0,0.43);
+  box-shadow: 9px 9px 15px 8px rgba(0,0,0,0.43);
+}
+
+.info-box {
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: #FFF8ED;
+  padding: 15px;
+  border-radius: 11px;
+  box-shadow: 1px 1px 7px #525252;
+  margin-bottom:15px;
+}
+
+button {
+  background-color: #fff;
+  width: 40px;
+  padding: 5px;
+  margin: 1px;
+  font-size: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px #525252;
+}
+
+.legend-color-box {
+  height: 15px;
+  width: 15px;
+  float: left;
+  margin-right: 10px;
+}
+
+.marker {
+  background-image: url('../image/subway.png');
+  background-size: contain;
+  display: block;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  padding: 0;
+  width: 7px;
+  height: 7px;
+}
+
+text {
+    font: 12px sans-serif;
+}
+
+/* svg {
+    display: run-in;
+    float: left;
+    height: 200px;
+    width: 200px;
+} */
