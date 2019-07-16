@@ -1,4 +1,4 @@
-## Web for people's transportation choices
+## Transportation choice model for commuters in NYC
 
 This is the website for the Capstone project titled 'Impact of Manhattan Congestion Surcharge on for-hire vehicles' done by us as part of our Masters in Applied Data Science and Urban Informatics at NYU. 
 
