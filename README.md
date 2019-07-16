@@ -1,5 +1,7 @@
 ## Web for people's transportation choices
 
-This map is for NYU URPL-GP-4650 Interactive Web Mapping final project.
+This is the website for the Capstone project titled 'Impact of Manhattan Congestion Surcharge on for-hire vehicles' done by us as part of our Masters in Applied Data Science and Urban Informatics at NYU. 
 
-This project serves as the web tool for reflecting the study of the Impact of the Manhattan Congestion Surcharge for For-Hire-Vehicles, the capstone project sponsored by Arcadis. Specifically, people's transportation choice will be reflected in the map, other contents such as background, motivation, objectives, Methodology will also be included. 
+The code and data for the project can be found [here](https://github.com/SohamMody/Impact_of_Manhattan_Congestion_Surcharge_on_For-Hire_Vehicles).
+
+And please click [here](https://sohammody.github.io/Capstone_Website/) to go to the website.
