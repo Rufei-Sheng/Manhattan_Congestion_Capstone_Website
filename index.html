@@ -68,9 +68,9 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading text-uppercase">The Impact of Manhattan Congestion Surcharge on For-Hire-Vehicle</div>
-        <div class="intro-lead-in">Quantifiable | Significant | Predictive</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Explore Map !</a>
+        <div class="intro-heading text-uppercase">The Impact of Manhattan Congestion Surcharge on For-Hire Vehicles</div>
+        <div class="intro-lead-in">Predictive | Relevant | Equity-focused</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Explore Our Map !</a>
       </div>
     </div>
   </header>
@@ -80,8 +80,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">The Map of Transportation Choice </h2>
-          <h3 class="section-subheading text-muted">This map reflects the transportation choices of commuters in New York City and has been aggregated on the taxi zone level. <br> The transportation choices of people in that taxi zone and the information about that taxi zone can be seen by hovering over it. Also, the red points on the map indicate the locations of subway stations.</h3>
+          <h2 class="section-heading text-uppercase">Transportation Choice  Map (Nest Based)</h2>
+          <h3 class="section-subheading text-muted">An interactive map which can be explored by moving mouse around.
+            <br>
+            <br>This map reflects the transportation choices amoung all modes of commuters in New York City,
+            aggregated on the taxi zone level.
+            Specifically, the shade of map indicates the median household income in each taxi zone,
+            classified into 5 levels.
+            The pie charts reflects commuters' transportation choices among 4 nests (nest1: taxi/for-hire-vehicles/shared for-hire-vehicles;
+            nest2: public transportation; nest3: walking; nest4: private vehicles) in that taxi zone.
+            Three charts represent three scenarios: one baseline scenario (no congestion surcharge)
+            and two surcharge scenarios (add around $2.75/ add around $10). All proportions are get from
+            the results of our multinomial nested logit model. The red points on the map indicate the locations of
+            subway stations.</h3>
         </div>
       </div>
 
@@ -89,58 +100,100 @@
         <div class="sidebar">
           <div class="info-box">
             <div class="legend">
-              <strong>—LEGEND OF TAXI ZONE COLORS—</strong>
+              <strong>—— LEGEND OF TAXI ZONE COLORS ——</strong>
             </div>
           </div>
           <div class="info-box">
-            <strong>—INFORMATION OF THE TAXI ZONE—</strong>
+            <strong>—— INFORMATION OF THIS TAXI ZONE —— </strong>
             <br>
             <span id='zonename'></span>
             <br>
             <span id='brough'>Please move the mouse around</span>
             <div class='with-3d-shadow with-transitions'>
             <br>
-              <span id='distribution'></span>
+              <strong id='distribution'></strong>
               <svg id="piechart" class="mypiechart"></svg>
+              <strong id='distribution2'></strong>
+              <svg id="piechart2" class="mypiechart"></svg>
+              <strong id='distribution3'></strong>
+              <svg id="piechart3" class="mypiechart"></svg>
             </div>
           </div>
           <div class="info-box">
-            <strong>—EXPLORE AIRPORT LOCATION—</strong>
+            <strong>—— EXPLORE CONGESTION ZONE AREA ——</strong>
             <br>
-            <button class="flyto" data-airport="JFK_airport">JFK</button>
-            <button class="flyto" data-airport="EWR_airport">EWR</button>
-            <button class="flyto" data-airport="LGA_airport">LGA</button>
-            <button class="flyto" data-airport="Back">Back</button>
+            <br>
+            <button class="flyto" data-congestionzone="CongestionArea">Congestion Zone</button>
+            <!-- <button class="flyto" data-airport="EWR_airport">EWR</button>
+            <button class="flyto" data-airport="LGA_airport">LGA</button> -->
+            <button class="flyto1" data-back="Back">Back</button>
+            <br>
+            <br>
           </div>
         </div>
       </div>
-      <!-- <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-      </div> -->
     </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Transportation Choice  Map (Mode Based)</h2>
+          <h3 class="section-subheading text-muted">An interactive map which can be explored by moving mouse around.
+            <br>
+            <br>This map reflects the transportation choices amoung surcharge-impacted modes of commuters in New York City,
+            aggregated on the taxi zone level.
+            Specifically, the shade of map indicates the proportion of people living in that zone
+            who work in the congestion zone area, classified into 4 levels.
+            The pie charts reflects commuters' transportation choices among 4 modes which will be influence
+            (taxi; for-hire-vehicles; shared for-hire-vehicles; private vehicles) in that taxi zone.
+            Three charts represent three scenarios: one baseline scenario (no congestion surcharge)
+            and two surcharge scenarios (add around $2.75/ add around $10). All proportions are get from
+            the results of our multinomial nested logit model. The red points on the map indicate the locations of
+            subway stations.</h3>
+        </div>
+      </div>
+
+      <div id='mapContainer2'>
+        <div class="sidebar">
+          <div class="info-box">
+            <div class="legend2">
+              <strong>—LEGEND OF TAXI ZONE COLORS—</strong>
+            </div>
+          </div>
+          <div class="info-box">
+            <strong>—INFORMATION OF THE TAXI ZONE—</strong>
+            <br>
+            <span id='zonename2'></span>
+            <br>
+            <span id='brough2'>Please move the mouse around</span>
+            <div class='with-3d-shadow with-transitions'>
+            <br>
+              <strong id='distribution4'></strong>
+              <svg id="piechart4" class="mypiechart"></svg>
+              <strong id='distribution5'></strong>
+              <svg id="piechart5" class="mypiechart"></svg>
+              <strong id='distribution6'></strong>
+              <svg id="piechart6" class="mypiechart"></svg>
+            </div>
+          </div>
+          <div class="info-box">
+            <strong>—— EXPLORE CONGESTION ZONE AREA —— </strong>
+            <br>
+            <br>
+            <button class="flyto" data-congestionzone="CongestionArea">Congestion Zone</button>
+            <!-- <button class="flyto" data-airport="EWR_airport">EWR</button>
+            <button class="flyto" data-airport="LGA_airport">LGA</button> -->
+            <button class="flyto1" data-back="Back">Back</button>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- About Section: intoduce some background -->
@@ -149,7 +202,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Know our study</h3>
+          <h3 class="section-subheading text-muted">Why is this study valuable now?</h3>
         </div>
       </div>
       <div class="row">
@@ -164,7 +217,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Background</h4>
-            <p class="text-muted">What is Congestion Surcharge</p>
+            <p class="text-muted">Congestion Surcharge</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -178,7 +231,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Motivation</h4>
-            <p class="text-muted">Why we need to study</p>
+            <p class="text-muted">Our focus</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -192,7 +245,7 @@
           </a>
           <div class="portfolio-caption">
             <h4>Objective</h4>
-            <p class="text-muted">How to study</p>
+            <p class="text-muted">Our approach</p>
           </div>
         </div>
         <!-- <div class="col-md-4 col-sm-6 portfolio-item">
@@ -247,7 +300,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Data and Methodology</h2>
-          <h3 class="section-subheading text-muted">Mathematics | Coding</h3>
+          <h3 class="section-subheading text-muted">Open Data | Modeling</h3>
         </div>
       </div>
       <div class="row">
@@ -631,10 +684,10 @@ compare the simulated ridership to prior observed preferences to assess the pred
                 <h2 class="text-uppercase">Project Background</h2>
                 <p class="item-intro text-muted"></p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-thumbnail.jpg" alt="">
-                <p>Much of New York's growing populationnds itself regularly frustrated while traversing the city. Subways are experiencing an increasing amount of delays due to an aging infrastructure. Driving speeds in Manhattan's Central Business District (south of 60th street) have slowed to an average of 7.2 mph, with speeds in the Midtown core" 30% slower than the rest of the CBD. While the
+                <p>Much of New York's growing population finds itself regularly frustrated while traversing the city. Subways are experiencing an increasing amount of delays due to an aging infrastructure. Driving speeds in Manhattan's Central Business District (south of 60th street) have slowed to an average of 7.2 mph, with speeds in the Midtown core" 30% slower than the rest of the CBD. While the
 subway and bus are still the third and fourth most popular ways to travel in NYC (after private vehicles and
-walking), public transit ridership has been declining since 2015, exacerbatingnancial challenges at the MTA. Department of Transportation (DOT)
-ocials attribute the loss in ridership to consumers increasingly choosing For-Hire Vehicles (FHV), particularly during off-peak hours. The challenges facing NYC's complex transportation ecosystem have motivated
+walking), public transit ridership has been declining since 2015, exacerbating financial challenges at the MTA. Department of Transportation (DOT)
+officials attribute the loss in ridership to consumers increasingly choosing For-Hire Vehicles (FHV), particularly during off-peak hours. The challenges facing NYC's complex transportation ecosystem have motivated
 this research.</p>
               <br>
               <p>New York lawmakers have responded to these challenges with an initiative unprecedented in the United
@@ -681,9 +734,9 @@ Yorkers and drivers with disabilities.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-thumbnail.jpg" alt="">
                 <p>While transportations advocates eagerly anticipate the revenue from the congestion pricing plan, many
 drivers, particularly from the outer boroughs and suburban areas, are skeptical of the plan's potential
-to reduce trac congestion and lament paying a tax aimed at repairing a public transit system they may
+to reduce traffic congestion and lament paying a tax aimed at repairing a public transit system they may
 not use. Regardless of one's political opinion of the plan, the circumstances emphasize the importance of
-understanding the effect of pricing changes on people's transportation choices.</p>
+understanding the effect of pricing changes on people's transportation choices.</p>
                 <!-- <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Explore</li>
@@ -719,16 +772,16 @@ understanding the effect of pricing changes on people's transportation choices.
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-thumbnail.jpg" alt="">
                 <p>Open data are used to model the dynamics behind transportation mode shift in New York
 City. We use the data-driven model to explore the impacts of the initial Feb. 2, 2019 congestion tax
-and anticipate the mode shift that may be provoked by the December 2020 implementation of larger scale
-congestion pricing, as well as an alternative scenario in which MTA prices were increased by 30% in order to
-fund repairs.</p>
+and anticipate the mode shift that may be provoked by the planned December 2020 implementation of larger scale
+congestion pricing.</p>
 
                 <ul class="list-inline">
-                  <li>Projetcs impacts on the following dimensions will be considered when evaluating the "effectiveness" of each policy scenario:</li>
+                  <li>Projected impacts on the following dimensions will be considered:</li>
                   <li>● Traffic reduction</li>
-                  <li>● Job increase or decrease</li>
+                  <li>● Industry revenue increase/decrease for MTA, FHV, Taxi/li>
                   <li>● Tax Revenue (earmarked for public transit investments)</li>
                   <li>●	Environmental (i.e. reduction in CO2 emissions)</li>
+                  <li>● Projected surcharge cost and/or commute time increase for NYC commuters</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
