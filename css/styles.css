@@ -2,8 +2,14 @@ body{
   background-color: #fff;
 }
 
-h1, h2 {
+h1 {
   font-family: fantasy
+  font-size: :25px;
+}
+
+h2 {
+  font-family: fantasy
+  font-size: :25px;
 }
 
 h3 {
@@ -11,16 +17,23 @@ h3 {
 }
 
 #mapContainer {
-  height: 520px;
+  height: 800px;
+  width: 100%;
+  background: lightgray;
+  margin: 0;
+}
+
+#mapContainer2 {
+  height: 800px;
   width: 100%;
   background: lightgray;
   margin: 0;
 }
 
 .sidebar {
-  height: 100%;
+  height: 800px;
   overflow: scroll;
-  width: 300px;
+  width: 405px;
   position:absolute;
   background-color: #fff;
   border: 3px solid #FFE752;
@@ -32,6 +45,7 @@ h3 {
   -webkit-box-shadow: 9px 9px 15px 8px rgba(0,0,0,0.43);
   box-shadow: 9px 9px 15px 8px rgba(0,0,0,0.43);
 }
+
 
 .info-box {
   top: 0px;
@@ -46,9 +60,9 @@ h3 {
 
 button {
   background-color: #fff;
-  width: 40px;
+  width: 120px;
   padding: 5px;
-  margin: 1px;
+  margin: 10px;
   font-size: 10px;
   border-radius: 15px;
   box-shadow: 1px 1px 7px #525252;

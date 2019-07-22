@@ -80,8 +80,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">The Map of Transportation Choice </h2>
-          <h3 class="section-subheading text-muted">This map reflects the transportation choices of commuters in New York City and has been aggregated on the taxi zone level. <br> Hover over a taxi zone to explore the transportation choices of people in that zone. Red points on the map indicate the locations of subway stations.</h3>
+          <h2 class="section-heading text-uppercase">Transportation Choice  Map (Nest Based)</h2>
+          <h3 class="section-subheading text-muted">An interactive map which can be explored by moving mouse around.
+            <br>
+            <br>This map reflects the transportation choices amoung all modes of commuters in New York City,
+            aggregated on the taxi zone level.
+            Specifically, the shade of map indicates the median household income in each taxi zone,
+            classified into 5 levels.
+            The pie charts reflects commuters' transportation choices among 4 nests (nest1: taxi/for-hire-vehicles/shared for-hire-vehicles;
+            nest2: public transportation; nest3: walking; nest4: private vehicles) in that taxi zone.
+            Three charts represent three scenarios: one baseline scenario (no congestion surcharge)
+            and two surcharge scenarios (add around $2.75/ add around $10). All proportions are get from
+            the results of our multinomial nested logit model. The red points on the map indicate the locations of
+            subway stations.</h3>
         </div>
       </div>
 
@@ -89,58 +100,100 @@
         <div class="sidebar">
           <div class="info-box">
             <div class="legend">
-              <strong>—LEGEND OF TAXI ZONE COLORS—</strong>
+              <strong>—— LEGEND OF TAXI ZONE COLORS ——</strong>
             </div>
           </div>
           <div class="info-box">
-            <strong>—INFORMATION OF THE TAXI ZONE—</strong>
+            <strong>—— INFORMATION OF THIS TAXI ZONE —— </strong>
             <br>
             <span id='zonename'></span>
             <br>
             <span id='brough'>Please move the mouse around</span>
             <div class='with-3d-shadow with-transitions'>
             <br>
-              <span id='distribution'></span>
+              <strong id='distribution'></strong>
               <svg id="piechart" class="mypiechart"></svg>
+              <strong id='distribution2'></strong>
+              <svg id="piechart2" class="mypiechart"></svg>
+              <strong id='distribution3'></strong>
+              <svg id="piechart3" class="mypiechart"></svg>
             </div>
           </div>
           <div class="info-box">
-            <strong>—EXPLORE AIRPORT LOCATION—</strong>
+            <strong>—— EXPLORE CONGESTION ZONE AREA ——</strong>
             <br>
-            <button class="flyto" data-airport="JFK_airport">JFK</button>
-            <button class="flyto" data-airport="EWR_airport">EWR</button>
-            <button class="flyto" data-airport="LGA_airport">LGA</button>
-            <button class="flyto" data-airport="Back">Back</button>
+            <br>
+            <button class="flyto" data-congestionzone="CongestionArea">Congestion Zone</button>
+            <!-- <button class="flyto" data-airport="EWR_airport">EWR</button>
+            <button class="flyto" data-airport="LGA_airport">LGA</button> -->
+            <button class="flyto1" data-back="Back">Back</button>
+            <br>
+            <br>
           </div>
         </div>
       </div>
-      <!-- <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-        </div>
-      </div> -->
     </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Transportation Choice  Map (Mode Based)</h2>
+          <h3 class="section-subheading text-muted">An interactive map which can be explored by moving mouse around.
+            <br>
+            <br>This map reflects the transportation choices amoung surcharge-impacted modes of commuters in New York City,
+            aggregated on the taxi zone level.
+            Specifically, the shade of map indicates the proportion of people living in that zone
+            who work in the congestion zone area, classified into 4 levels.
+            The pie charts reflects commuters' transportation choices among 4 modes which will be influence
+            (taxi; for-hire-vehicles; shared for-hire-vehicles; private vehicles) in that taxi zone.
+            Three charts represent three scenarios: one baseline scenario (no congestion surcharge)
+            and two surcharge scenarios (add around $2.75/ add around $10). All proportions are get from
+            the results of our multinomial nested logit model. The red points on the map indicate the locations of
+            subway stations.</h3>
+        </div>
+      </div>
+
+      <div id='mapContainer2'>
+        <div class="sidebar">
+          <div class="info-box">
+            <div class="legend2">
+              <strong>—LEGEND OF TAXI ZONE COLORS—</strong>
+            </div>
+          </div>
+          <div class="info-box">
+            <strong>—INFORMATION OF THE TAXI ZONE—</strong>
+            <br>
+            <span id='zonename2'></span>
+            <br>
+            <span id='brough2'>Please move the mouse around</span>
+            <div class='with-3d-shadow with-transitions'>
+            <br>
+              <strong id='distribution4'></strong>
+              <svg id="piechart4" class="mypiechart"></svg>
+              <strong id='distribution5'></strong>
+              <svg id="piechart5" class="mypiechart"></svg>
+              <strong id='distribution6'></strong>
+              <svg id="piechart6" class="mypiechart"></svg>
+            </div>
+          </div>
+          <div class="info-box">
+            <strong>—— EXPLORE CONGESTION ZONE AREA —— </strong>
+            <br>
+            <br>
+            <button class="flyto" data-congestionzone="CongestionArea">Congestion Zone</button>
+            <!-- <button class="flyto" data-airport="EWR_airport">EWR</button>
+            <button class="flyto" data-airport="LGA_airport">LGA</button> -->
+            <button class="flyto1" data-back="Back">Back</button>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- About Section: intoduce some background -->
