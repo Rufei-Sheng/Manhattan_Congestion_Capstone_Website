@@ -199,7 +199,7 @@
 
   </section>
 
-  <!-- About Section: intoduce some background -->
+  <!-- About Section: introduce some background -->
   <section class="bg-light" id="portfolio">
     <div class="container">
       <div class="row">
@@ -319,22 +319,27 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/data/1.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Data</h4>
                   <div class="timeline-body">
-                    <p class="text-muted">Census Static Data</p>
+                    <strong>————Aggregated Dataset————</strong>
+                    <img class="img-fluid d-block mx-auto" src="img/agg_data.jpg" alt="">
+                    <strong>——————Data Source——————</strong>
+                    <br>
+                    <stong class="text-muted">Census Static Data</stong>
                     <ul class="list-inline">
-                      <li>● Longitudinal Employer-Household Dynamics (LEHD)/ Origin-Destination Employment Statistics(LODES) data</li>
-                      <li>● American Community Survey (ACS) data</li>
+                      <li><a href="https://lehd.ces.census.gov/data/" target="_blank">● Longitudinal Employer-Household Dynamics (LEHD)/ Origin-Destination Employment Statistics(LODES) data</a></li>
+                      <li><a href="https://www.census.gov/programs-surveys/acs/data.html" target="_blank">● American Community Survey (ACS) data</a></li>
+                      <li><a href="https://data.cityofnewyork.us/Transportation/NYC-Taxi-Zones/d3c5-ddgc" target="_blank">● NYC Taxi Zones</a></li>
                     </ul>
-                    <p class="text-muted">Trip Data</p>
+                    <stong class="text-muted">Trip Data</stong>
                     <ul class="list-inline">
-                      <li>● Taxi and Limousine Commission (TLC)</li>
-                      <li>●	Here map API</li>
-                      <li>●	Uber API</li>
+                      <li><a href="https://www1.nyc.gov/site/tlc/about/data.page" target="_blank">● Taxi and Limousine Commission (TLC)</a></li>
+                      <li><a href="https://developer.here.com/develop/rest-apis" target="_blank">● Here map API</a></li>
+                      <li><a href="https://developer.uber.com" target="_blank">● Uber API</a></li>
                     </ul>
                   </div>
                 </div>
@@ -343,15 +348,15 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/data/2.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Methodology</h4>
-                  <p class="text-muted">Nested Logit Models</p>
+                  <p class="list-inline">Nested Logit Models</p>
                 </div>
                 <div class="timeline-body">
-                  <p class="list-inline">In order to quantify the impact of the Manhattan Congestion Pricing policy, we need to compare the
+                  <p class="text-muted">In order to quantify the impact of the Manhattan Congestion Pricing policy, we need to compare the
 simulated ridership under the new pricing scenario against the simulated baseline scenario. For that purpose,
 we will first use the LEHD/LODES as a proxy for urban mobility, then train a model based on choices
 reported in ACS and actual proportions of taxi, FHV and shared FHV observed in the data, and finally
@@ -359,21 +364,28 @@ compare the simulated ridership to prior observed preferences to assess the pred
                 </div>
               </div>
             </li>
-            <!-- <li>
+            <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="img/data/3.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
+                  <h4>Tune parameters</h4>
+                  <p class="list-inline">Choose the best parameters</p>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  <p class="text-muted">Tune the parameters by comparing the model results with
+                  ground choice. We use monte carlo in choosing parameters. Regrading sampling taxi zones,
+                  we first try to randomly choose 10 taxi zones； then try to pick the taxi zones which
+                  cover 60% population. Apply grid search to those sampling taxi zones. The loss function
+                  that we tried include root of mean saqure error (RMSE), normalized RMSE, weighting cummulative loss,
+                  and RMSE based on total population for each mode. Finally pick the best parameters from 48 combination
+                  of Tao and Lambda. We also apply uncertatinty in our results.
+                </p>
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+            <!-- <li class="timeline-inverted">
               <div class="timeline-image">
                 <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
               </div>
@@ -389,10 +401,11 @@ compare the simulated ridership to prior observed preferences to assess the pred
             </li> -->
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>Further
-                  <br>Will
-                  <br>Come...</h4>
+                <h4>Quantify
+                  <br>The
+                  <br>Impact</h4>
               </div>
+
             </li>
           </ul>
         </div>
@@ -568,7 +581,7 @@ congestion pricing.</p>
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/katie.jpg" alt="">
             <h4>Katie Voorhees</h4>
-            <p class="text-muted">Literature Review & Report Writing Lead</p>
+            <p class="text-muted">Literature Review <br>& Report Writing Lead</p>
             <!-- <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -592,7 +605,7 @@ congestion pricing.</p>
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/Rufei.jpg" alt="">
             <h4>Rufei sheng</h4>
-            <p class="text-muted">Modeling and Analysis Lead</p>
+            <p class="text-muted">Modeling and Analysis Lead <br>& Web Development</p>
             <!-- <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -836,10 +849,12 @@ States - congestion pricing. With aims to relieve congestion and recover some di
 State's Department of Taxation and Finance imposed a congestion surcharge on February 2, 2019 aimed
 at taxis and FHVs. The tax adds $2.75 to FHV trips, $2.50 to
 taxi trips and $.75 to ride-share or pool trips. The tax applies to every trip that begins, ends or passes
-through Manhattan south of 96th Street. On April 1, 2019 the NY State budget passed, approving a future
-congestion tax for all vehicles entering Manhattan's CBD below 60th St. Revenue from the tax are earmarked for MTA capital investments, but
-this larger scale congestion pricing scheme is not scheduled to be in eect until December 2020. The tax will collect around $11 from both for-hire and private vehicles, and will include exemptions for low income New
-Yorkers and drivers with disabilities.</p>
+through Manhattan south of 96th Street. On April 1, 2019, the NY State budget passed, approving a
+future congestion tax for all vehicles  entering Manhattan's CBD below 60th St. Revenue from the tax is
+earmarked for MTA capital investments, but this larger scale congestion pricing scheme is not
+scheduled to be in effect until December 2020 at the earliest. The tax will collect around $10
+from both for-hire and private vehicles and will likely include exemptions for congestion zone
+residents with lower incomes and drivers with disabilities.</p>
                 <!-- <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Client: Threads</li>
