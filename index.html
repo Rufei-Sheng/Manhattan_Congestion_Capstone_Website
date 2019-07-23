@@ -377,7 +377,7 @@ compare the simulated ridership to prior observed preferences to assess the pred
                   ground truth. For this comparision, we initially used 10 only randomly chosen taxi zones； 
                   and then, in a more enhanced version, used the taxi zones which cover 60% of the population. We applied grid search 
                   to these selected taxi zones. The loss functions that we used were root of mean square error(RMSE), normalized RMSE, 
-                  weighting cumulative los and RMSE based on total population for each mode. The reason for using more than one loss function
+                  weighting cumulative loss and RMSE based on total population for each mode. The reason for using more than one loss function
                   was that no single one was able to give out good parameters by itself. Finally, we picked the best parameters from 48 combinations
                   of our parameters(Tau and Lambda). We also added a level of uncertainty in our results by using 5 of the best sets of parameters 
                   and reporting their mean and standard deviation.
