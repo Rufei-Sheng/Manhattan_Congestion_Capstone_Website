@@ -17,21 +17,21 @@ h3 {
 }
 
 #mapContainer {
-  height: 800px;
+  height: 780px;
   width: 100%;
   background: lightgray;
   margin: 0;
 }
 
 #mapContainer2 {
-  height: 800px;
+  height: 780px;
   width: 100%;
   background: lightgray;
   margin: 0;
 }
 
 .sidebar {
-  height: 800px;
+  height: 100%;
   overflow: scroll;
   width: 405px;
   position:absolute;
