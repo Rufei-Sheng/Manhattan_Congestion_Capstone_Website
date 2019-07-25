@@ -455,123 +455,78 @@
                 <!-- result 1 -->
               <h4 class="col-lg-8 mx-auto text-center"> —— Mode shift under each scenario ——</h4>
               <img class="img-fluid d-block mx-auto" src="img/results/results1.png" alt="">
-              <strong class="col-lg-8 mx-auto text-center"> Table 2 </strong>
-              <p>This table shows a distribution view of the scaled results of our model simulations.
-                Numbers represent the proportion of total NYC commute trips for each mode predicted under
-                each scenario. Specifically, an overall 0.16% drop (about 4,700 trips) in Taxi and (non-shared)
-                FHV trips during the daily morning commute hours under the $2.75 tax, and an overall 0.08% drop
-                (about 23,000 trips) under the $10 tax. The private vehicle trips decrease 0.17% (about 4,800 trips)
-                 under the $2.75 tax and 2.73% (about 80,000 trips) under $10 tax. In contrast, shared FHV trips,
-                 Public Transportation trips, and Walking trips increase in both scenarios. 
-                  Based on the means and the standard deviations of our models,
-                the uncertainties of the proportions are as follows: Taxi±0.05%, FHV±0.14%, Shared FHV±0.19%,
-                 Public Transportation±0.23%, Walking±0.05%, Private Vehicles±0.14%.<br><br><br>
+              <!-- <strong class="col-lg-8 mx-auto text-center"> Table 2 </strong> -->
+              <p><br>Table2 and Table 3 show the shift in NYC wide transportation choices projected
+                for each policy scenario. The weighted average of 5 sets of best
+                models are considered as the final results and the weighted standard deviates are calculated as
+                uncertainties of each value. The results are scaled based on the "ground truth" - 
+                the commuting transportation mode choices reported in the American Community
+                Survey(ACS) to ensure they matched with the realities. Our model predicts a
+                reduction in Taxi, (non-shared) FHV, and private vehicle trips under both Congestion
+                Pricing Scenarios. We predicted an overall 0.16% drop (about 4,600 trips) in Taxi
+                and (non-shared) FHV trips during the daily morning commute hours under the $2.75 tax,
+                and an overall 0.25% drop (about 65,00 trips) under the $10 tax.  The private vehicle
+                trips decrease 0.16% (about 1,500 trips) under the $2.75 tax and 2.89% (about 62,000
+                trips) under $10 tax. The model predicts an increase in Shared FHV trips, Public
+                Transportation trips, and Walking trips in both scenarios.<br><br><br>
                  </p>
 
                  <!-- result 2 -->
-                 <h4 class="col-lg-8 mx-auto text-center"> —— Anticipated impact on <br>MTA, taxi, FHV revenues, and Tax revenues ——</h4>
+                 <h4 class="col-lg-8 mx-auto text-center"> —— Anticipated impact on MTA, taxi, FHV revenues, and Tax revenues ——</h4>
                  <img class="img-fluid d-block mx-auto" src="img/results/results2-1.png" alt="">
-                 <strong class="col-lg-8 mx-auto text-center"> Figure 1</strong>
-                 <p>The distribution of the revenues for the four transportation modes under different
-                    price scenarios, along with the actual amount change displayed in the  table.This
-                    bar chart on the left shows the change in revenues for Public Transportation
-                   (MTA), Taxi, FHV, and Shared-FHV under each price scenario. Corresponding to the
-                   mode shift,  there are predicted a reduction in Taxi and (non-shared) FHV revenues
-                    under both Congestion Pricing Scenarios, and an increase in Shared- FHV and MTA revenues.
-                    The table on the right displays the actual amount of change in dollars between scenarios
-                     with the corresponding percentage. Taxi revenue has the biggest percentage drop (about 40%)
-                      each time, and MTA  has the greatest growth in number (about $72,000 and $551,000).
-                      Non-shared FHV has a slight decrease in revenues under each price scenario, however,
-                      the increase in shared FHV (about 50% each time)  can easily cover that loses and creates
-                      extra profits for the total FHV revenue (the overall FHV revenue increases $15,952 from
-                      status quo to $2.75 tax and $39,495 from $2.75 to $10 tax). The variances in the
-                      revenue amount for each mode are as follows: Taxi  ±$8,500 FHV ±$1,700,
-                      Shared FHV±$20,000, Public Transportation±$13,000.<br><br></p>
-
-              <img class="img-fluid d-block mx-auto" src="img/results/results2-2.png" alt="">
-              <strong class="col-lg-8 mx-auto text-center"> Table 3</strong>
-              <p>The Tax Revenue from the Congestion Surcharge under each scenario. The predicted
-                tax revenue is compared with a "zero scenario" revenue —— the expected revenue
-                if the surcharge were imposed and no commuters change their mode choice behaviors.
-                The results show that both of the predicted revenues after the mode shift in
-                scenario 2 and 3 are about 50% lower than the zero scenario revenues.
-              This indicates the advantage of our methodology, as the use of a mode shift model
-              provides a more realistic prediction of future revenues, as it accounts for behavior
-              changes resulting from the tax. Policy makers using the zero scenario might vastly
-              over-estimate surcharge tax revenues.The uncertainties of the predicted revenues are ± $5,000
-              under $2.75 Tax scenario and ± $22,000 in $10 Tax scenario. <br><br></p>
-
-              <img class="img-fluid d-block mx-auto" src="img/results/results2-3.png" alt="">
-              <strong class="col-lg-8 mx-auto text-center"> Figure 2</strong>
-                                    <p>Origin taxi zones on the left are shaded by the predicted percent decrease in total
-                                      taxi and FHV ridership under the $2.75 Congestion Tax scenario. Origin taxi
-                                      zones on the right are shaded by the predicted percent decrease in total taxi,
-                                      FHV, and private vehicle ridership under the $10 Congestion Tax scenario. Manhattan
-                                      taxi zones in or adjacent to the congestion zone are predicted to experience the
-                                      largest shift. All of the 37 origin taxi zones that the model predicts will experience
-                                      the most mode shift under the $10 Congestion Tax (predicted change is more than 28.57%,
-                                      which is one standard deviation above the mean predicted change) are in Manhattan. The
-                                      geographic range of impact is much larger in Scenario 3 ($10 surcharge). 
-                                      Our model did not assume any exemptions for residents of the congestion zones,
-                                      and our results suggest that decisions around those exemptions may significantly
-                                      affect the impacts of the policy.<br><br><br><br></p>
+                 <img class="img-fluid d-block mx-auto" src="img/results/results2-2.png" alt="">
+                 <!-- <strong class="col-lg-8 mx-auto text-center"> Figure 1</strong> -->
+                 <p><br>Our major results are reported in Figure 1. This bar chart on the left shows the change
+                   in revenues with uncertainties for Public Transportation(MTA), Taxi, FHV, and Shared-FHV under
+                   each price scenario. Corresponding to the mode shift,  there are predicted a reduction in
+                   Taxi and (non-shared) FHV revenues under both Congestion Pricing Scenarios, and an increase
+                   in Shared- FHV and MTA revenues. The table on the right displays the actual amount of change
+                   n dollars between scenarios with the corresponding percentage. Taxi revenue has the biggest
+                   percentage drop (up to 46% decrease), and MTA has the greatest growth in number
+                   (about $72,000 and $551,000). Non-shared FHV has a slight decrease in revenues under
+                   each price scenario, however, the increase in shared FHV (up to 65% increase)  can
+                   easily cover that loses and creates extra profits for the total FHV revenue
+                    (the overall FHV revenue increases $14,771 from status quo to $2.75 tax and
+                    $33,818 from $2.75 to $10 tax). Table  (4) shows the Tax Revenue from the
+                    Congestion Surcharge under each scenario. We compare our predicted tax revenue
+                    with a "zero scenario" revenue- the expected revenue if the surcharge were imposed
+                    and no commuters change their mode choice behaviors. The results show that both of
+                    the predicted revenues after the mode shift in scenario 2 and 3 are about 50% lower
+                    than the zero scenario revenues. We believe that this shows the advantage of our
+                    ethodology, as the use of a mode shift model provides a more realistic prediction
+                    of future revenues, as it accounts for behavior changes resulting from the tax.
+                    Policy makers using the zero scenario might vastly over-estimate surcharge tax
+                    revenues. All of the 37 origin taxi zones that the model predicts will experience
+                    the most mode shift under the $10 Congestion Tax (predicted change is more than
+                    28.57%, which is one standard deviation above the mean predicted change) are
+                    in Manhattan. As seen in Figure 2, the geographic range of impact is much
+                    larger in Scenario 3 ($10 surcharge).  Our model did not assume any exemptions
+                    for residents of the congestion zones, and our results suggest that decisions
+                    around those exemptions may significantly affect the impacts of the policy.
+                    <br><br><br><br></p>
 
 <!-- result 3 -->
-<h4 class="col-lg-8 mx-auto text-center"> —— Anticipated daily impact on <br>commuter time and expenses ——</h4>
-<img class="img-fluid d-block mx-auto" src="img/results/results3-1.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Table 4</strong>
-  <p>
-This table shows the subway ridership and the impact on average commute time and cost
-under the 2 congestion surcharge scenarios. These are derived from the mean values of the
-distribution created by running 5 sets of parameters with percentage variance.
-We can see an increase in the ridership and commute time but, the cost remains somewhat similar.<br><br>
-  </p>
-<img class="img-fluid d-block mx-auto" src="img/results/results3-2.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Table 5</strong>
-<p>
-  This table shows the percentage changes in subway ridership average commute time and cost
-  under the 2 congestion surcharge scenarios. These are derived from the mean values of the
-  distribution created by running 5 sets of parameters with percentage variance as. We can see
-  a noticeable increase in the ridership and commute time but, the change
-  in the cost is relatively insignifican.
-  <br>
-  <br>
-  As seen in table 4 and table 5, the subway ridership and the commute time increased for
-  both the scenarios but, the change is more significant for the $10 Congestion Tax Scenario.
-  So, we can see that the average commuter will spend not only more time on their commute
-  but will also, most likely, have to commute in more crowded subway cars. Also, an interesting 
-  impact seen here is that the commute cost increases slightly in the $2.75 congestion tax scenario
-  in contrast to it reducing in the $10 scenario. This is because the model predicted that most
-  of the taxi and FHV commuters simply switched to either shared FHVs or stuck to their mode of
-   choice and just paid the surcharge instead of shifting to the subway which dramatically cut
-   the cost which makes sense too as people are usually very reluctant to change their
-   transportation mode<br><br><br>.
+<h4 class="col-lg-8 mx-auto text-center"> —— Anticipated daily impact on commuter time and expenses ——</h4>
+<img class="img-fluid d-block mx-auto" src="img/results/results3.png" alt="">
+  <p><br>
+As seen in Tables 5 and 6, the subway ridership and the commute time increased
+for both the scenarios but, the change is more significant for the $10 Congestion Tax
+Scenario. So, we can see that the average commuter will spend not only more time on their
+commute but will also, most likely, have to commute in more crowded subway cars. Also,
+an interesting impact seen here is that the commute cost increases slightly in the $2.75
+congestion tax scenario in contrast to it reducing in the $10 scenario. This is because
+the model predicted that most of the taxi and FHV commuters simply switched to either
+shared FHVs or stuck to their mode of choice and just paid the surcharge instead of
+shifting to the subway which dramatically cut the cost which makes sense too as people
+are usually very reluctant to change their transportation mode.
+<br><br><br>.
 </p>
 
 <!-- result 4 -->
 <h4 class="col-lg-8 mx-auto text-center"> —— Anticipated environmental impact ——</h4>
 <!-- <img class="img-fluid d-block mx-auto" src="img/results/results3-1.png" alt=""> -->
   <p>
-The earlier cited work of Gibson, et. al provides a framework for us to quantitatively evaluate
-the predicted environmental impacts of the surcharge scenarios. They found that for every daily
-vehicle reduction emissions would be reduced by .00006552 microgram/meter cubed. They then
-presented a framework for quantifying the economic benefit of this emissions reduction. They cite
-1984 US government research that estimated that people were willing to pay $148.70 ($366.59 in 2019)
- per year per person for every microgram/cubic meter reduction in pollution. If we assume that
- every 60 miles (during the 6 am to 10 am morning commute window) in driving distance represents
- one vehicle (conservatively assuming a constant 15 miles per hour), we can estimate the number
- of vehicles reduced. From this framework we predict a very small reduction of 13 cars per commute
- window under the $2.75 surcharge scenario and a reduction of 9,045 cars during the morning commute
-  under the $10 scenario. This includes total mileage reduction from taxis, FHVs and private
-  vehicles and accounts for the additional miles from the predicted increase in shared FHVs.
-  Under scenario 3 the framework presented by Gibson, et.al would predict a daily reduction of
-  approximately 0.6 micrograms/meters cubed for a 219 microgram/meters cubed yearly reduction of
-   harmful pollutants attributed to the morning commute hours. If we multiply that total by the
-   $366.59 per year a person is willing to pay for a reduction in unit of pollutants, we get a
-   yearly value of $80,348.91 per person impacted. Applied to the approximately 1.3 million
-   people living in Manhattan's congestion zone, the reductions environmental benefits are
-   significant. Notable from Gibson, et. al. was their finding that air quality benefits expanded
-   beyond the congestion zone, suggesting an even larger range of environmental benefit is possible. 
+The earlier cited work of Gibson, et. al provides a framework for us to quantitatively evaluate the predicted environmental impacts of the surcharge scenarios. They found that for every daily vehicle reduction emissions would be reduced by .00006552 microgram/meter cubed. They then presented a framework for quantifying the economic benefit of this emissions reduction. They cite 1984 US government research that estimated that people were willing to pay $148.70 ($366.59 in 2019) per year per person for every microgram/cubic meter reduction in pollution. If we assume that every 60 miles (during the 6 am to 10 am morning commute window) in driving distance represents one vehicle (conservatively assuming a constant 15 miles per hour), we can estimate the number of vehicles reduced. From this framework we predict a very small reduction of 29 (+-15) cars per commute window under the $2.75 surcharge scenario and a reduction of 9,060 (+- 40) cars during the morning commute under the $10 scenario. This includes total mileage reduction from taxis, FHVs and private vehicles and accounts for the additional miles from the predicted increase in shared FHVs. Under scenario 2 we would approximate a negligible daily reduction of pollutants by .002 (+-.001) micrograms/meters cubed, for a yearly reduction of 0.7 (+- 0.35) attributed to the effect of the $2.75 surcharge on the morning commuter. Under scenario 3 the framework presented by Gibson, et.al would predict a daily reduction of approximately 0.6 (+-.003) micrograms/meters cubed for a 217 (+-1) microgram/meters cubed yearly reduction of harmful pollutants attributed to the morning commute hours. If we multiply that total by the $366.59 per year a person is willing to pay for a reduction in unit of pollutants, we get a yearly value of $79,430 (+-$353)  per person impacted. Applied to the approximately 1.3 million people living in Manhattan's congestion zone, the reductions environmental benefits are significant. Notable from Gibson, et. al. was the finding that air quality benefits expanded beyond the congestion zone, suggesting an even larger range of environmental benefit is possible.  
 <br><br><br>
   </p>
 
@@ -579,69 +534,51 @@ presented a framework for quantifying the economic benefit of this emissions red
 <!-- result 5 -->
 <h4 class="col-lg-8 mx-auto text-center"> —— Equity evaluatio ——</h4>
 <img class="img-fluid d-block mx-auto" src="img/results/results5-1.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Figure 3</strong>
   <p>
-The plot on the left shows total commuters by income that report using taxi, FHV, shared FHV
-or private vehicles to commute to work. The plot on the right shows the expected net
-reduction of Taxi, FHV, shared FHV and private vehicles predicted under Scenario 3 - $10
-congestion surcharge - by income bracket. ACS income brackets are not evenly spaced, so
-the numbers in each bracket were either summed or divided in order to create a perceptually
-uniform plot, with each bar representing an income range of $25,000. In order to evaluate any
-potential equity or accessibility concerns with the existing or
-proposed congestion tax, the model's predicted mode shift segmented by wage
-bracket are compared. Figure 3 plots the predicted net reduction (right) in vehicle commutes
-from the baseline Scenario 1 to Scenario 3 - the proposed $10 surcharge - by income
-bracket, as well as the total number of vehicle commuters in Scenario 1 (left). Many vehicle-based
-commuters make fewer than $100,000 per year, suggesting potential for a congestion surcharge to
-weigh heavily on the middle class. However, when plotting predicted mode shift as a result of the
-surcharge, the surcharge appears to be a relative progressive tax, with the majority of the
-mode shift experienced by people making over $75,000 per year. <br><br>
+In order to evaluate any potential equity or accessibility concerns with the existing
+or proposed congestion tax, we compared our model's predicted mode shift segmented by wage
+bracket. Figure 3 plots the predicted percentage reduction (right) in vehicle commutes from
+the baseline Scenario 1 to Scenario 3 - the proposed $10 surcharge - by income bracket, as
+well as the original percent of commuters in each bracket who choose taxi/FHV/private vehicle
+(left). Many vehicle-based commuters make fewer than $100,000 per year, suggesting potential
+for a congestion surcharge to weigh heavily on lower and middle income commuters. When
+plotting predicted mode shift as a result of the surcharge, it becomes clear that of all
+vehicle commuters, those making under $25,000 may feel the most impact in terms of mode
+shift as a percentage of vehicle commuters.  <br><br>
 </p>
 
 <img class="img-fluid d-block mx-auto" src="img/results/results5-2.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Figure 4</strong>
-<p>
-  The figure on the left shows the percent of taxi zone residents who work in the congestion
-  zone (shaded by home taxi zone). The figure on the right shows the percent of all taxi,
-  FHV, shared FHV and private vehicle commuters expected to shift modes due to the $10 surcharge.
-  Both figures reference the "Scenario 3" congestion surcharge of $10. The congestion zone
-  referenced is the corresponding zone, Manhattan below 60th st.. When comparing the two plots
-  in Figure 4, a higher percent of commuters working in the congestion zone is associated with
-  a higher percent of vehicle commuters predicted to change modes. This makes sense as commuters
-  not living or working in the congestion zone will not be affected by the surcharge during their
-  workday commutes. This dynamic may explain why we predict that commuters impacted by the surcharge will skew higher income.
+<p><br>
+A higher percent of commuters working in the congestion zone is associated with a
+higher percent of vehicle commuters predicted to change modes. This makes sense as commuters
+not living or working in the congestion zone will not be affected by the surcharge during their
+workday commutes. 
   <br><br>
 </p>
 
 <img class="img-fluid d-block mx-auto" src="img/results/results5-3.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Figure 5</strong>
-<p>
-  The plot on the left shows the positive correlation between percent of commuters
-  working in the congestion zone and that home zone's median wage. The plot on the right shows
-  the negative correlation between the percent of commuters working in the congestion zone and
-  the percent of commuters choosing private vehicles for transportation to work. As shown in figure 5
-  The percent of people working in the congestions zone is associated with a higher median
-  income at the taxi zone level. Additionally, the percent of people working in the congestion
-  zone is associated with a lower percentage of people in that zone reporting private vehicles as
-  their transportation choice, suggesting that many private vehicle commuters may not work in
-  the congestion zone,  and may not be impacted by the surcharge on their daily commutes.  
+<p><br>
+  As seen in Figure 5, the percent of people working in the congestions
+  zone is associated with a higher median income at the taxi zone level. Additionally,
+  the percent of people working in the congestion zone is associated with a lower percentage
+  of people in that zone reporting private vehicles as their transportation choice, suggesting
+  that many private vehicle commuters may not work in the congestion zone,  and may not be
+  impacted by the surcharge on their daily commutes. Referring again to Figure 3 those
+  lower income commuters who do work in the congestion are predicted to shift modes at a
+  higher rate, potentially creating a prohibitively long commute.  
   <br><br>
 </p>
 
 <img class="img-fluid d-block mx-auto" src="img/results/results5-4.png" alt="">
-<strong class="col-lg-8 mx-auto text-center"> Figure 6</strong>
-<p>
-  To explore accessibility concerns, the map on the left is shaded according to the percent of residents in that zone age 65
-  or over, calculated as an average of all the census tracts in that zone. The map on the
-  right shows the percent of residents with a disability, calculated as the average of all
-  census tracts in that zone.
-  Figure 6 has been included to show the distribution of residents over the age of 65
-  or with a disability. While our model estimates mode choice based on a trade off between time
-  and cost, these populations may have additional concerns that might prevent them from switching
-  modes, particularly to public transportation, even if a surcharge made their vehicle-based
-  commute prohibitively expensive. While the final details of the proposed $10 surcharge are
-  not yet available, most news accounts report that there will be an exemption or discount for
-  populations with accessibility concerns, particularly for those living in the congestion zone. 
+<p><br>
+  To explore accessibility concerns, Figure 6 has been included to show the distribution
+  of residents over the age of 65 or with a disability. While our model estimates mode choice
+  based on a trade off between time and cost, these populations may have additional concerns
+  that might prevent them from switching modes, particularly to public transportation, even
+  if a surcharge made their vehicle-based commute prohibitively expensive. While the final
+  details of the proposed $10 surcharge are not yet available, most news accounts report that
+  there will be an exemption or discount for populations with accessibility concerns,
+  particularly for those living in the congestion zone. 
   <br><br>
 </p>
 
